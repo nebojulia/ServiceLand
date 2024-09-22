@@ -1,0 +1,19 @@
+.header {
+  .header__inner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .header__list {
+    display: flex;
+  }
+
+  @media (max-width: 599px) {
+    .header__nav,
+    .header__phone,
+    .header__button {
+      display: none;
+    }
+  }
+}
