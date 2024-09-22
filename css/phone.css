@@ -1,0 +1,30 @@
+.phone {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 0;
+
+  .phone__icon {
+    border-radius: 20px;
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    background: #0369a1;
+    grid-area: 1 / 1 / 3 / 2;
+  }
+  .phone__num {
+    grid-area: 1 / 2 / 2 / 3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0f172a;
+  }
+  .phone__descr {
+    grid-area: 2 / 2 / 3 / 3;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    color: #475569;
+  }
+}
