@@ -5,10 +5,22 @@
     align-items: center;
     padding: 20px 0;
   }
+  .header__nav {
+    margin-left: 207px;
+  }
   .header__list {
     display: flex;
+    gap: 48px;
   }
-
+  .header__item-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0f172a;
+  }
+  .header__phone {
+    margin-left: 98px;
+  }
   @media (max-width: 599px) {
     .header__nav,
     .header__phone,
