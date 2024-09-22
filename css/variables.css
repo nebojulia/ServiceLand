@@ -1,0 +1,8 @@
+:root {
+  --font-family: "Inter", sans-serif;
+
+  --bg-color: #fff;
+
+  --page-margin-mobile: 16px;
+  --page-margin-desktop: 80px;
+}

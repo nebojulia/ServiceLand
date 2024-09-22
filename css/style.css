@@ -1,1 +1,7 @@
 @import "./reboot.css";
+@import "./variables.css";
+@import "./page.css";
+@import "./header.css";
+@import "./container.css";
+@import "./burger.css";
+@import "./logo.css";
