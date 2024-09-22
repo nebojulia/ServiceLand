@@ -1,4 +1,6 @@
 .header {
+  border-bottom: 1px solid #94a3b8;
+
   .header__inner {
     display: flex;
     width: 100%;
@@ -7,10 +9,11 @@
   }
   .header__nav {
     margin-left: 207px;
+    width: 454px;
   }
   .header__list {
     display: flex;
-    gap: 48px;
+    justify-content: space-between;
   }
   .header__item-link {
     font-weight: 400;
@@ -20,6 +23,9 @@
   }
   .header__phone {
     margin-left: 98px;
+  }
+  .header__button {
+    margin-left: 48px;
   }
   @media (max-width: 599px) {
     .header__nav,
