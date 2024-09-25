@@ -1,9 +1,9 @@
 .container {
-  min-width: min(calc(100% - 160px)), 1280px;
-  margin: 0 var(--page-margin-desktop);
+  min-width: max(calc(100% - 160px), 1280px);
+  margin: 0 auto;
 
   @media (max-width: 599px) {
-    min-width: min(calc(100% - 80px)), 480px;
-    margin: 0 var(--page-margin-mobile);
+    min-width: max(calc(100% - 32px), 320px);
+    margin: 0 auto;
   }
 }
