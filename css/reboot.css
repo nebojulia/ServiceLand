@@ -3,39 +3,8 @@
 *::after {
   box-sizing: border-box;
 }
-html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  margin: 0;
-}
-article,
-aside,
-dialog,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section {
-  display: block;
-}
+html,
 body {
   margin: 0;
   font-family: var(--font-family);
-}
-ol,
-ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-}
-button {
-  border: none;
-  background-color: inherit;
-  padding: 0;
 }
