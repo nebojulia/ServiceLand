@@ -2,31 +2,38 @@
   border-bottom: 1px solid #94a3b8;
 
   .header__inner {
-    display: flex;
+    display: grid; /* не понимаю почему отключается контейнер */
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
     width: 100%;
     align-items: center;
     padding: 20px 0;
-    justify-content: center;
+  }
+  .header__logo {
+    grid-column: 1/3;
   }
   .header__nav {
-    margin-left: 207px;
-    width: 454px;
+    grid-column: 4/9;
   }
   .header__list {
     display: flex;
-    justify-content: space-between;
+    gap: 48px;
+    list-style: none;
+    padding: 0;
   }
   .header__item-link {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: #0f172a;
+    text-decoration: none;
   }
-  .header__phone {
-    margin-left: 98px;
+  .header__activities {
+    display: flex;
+    grid-column: 9/13;
+    justify-content: space-between;
   }
   .header__button {
-    margin-left: 48px;
   }
   @media (max-width: 599px) {
     .header__inner {
