@@ -1,9 +1,23 @@
 .container {
-  max-width: max(calc(100% - 160px), 1280px);
+  max-width: max(calc(100% - 32px), 320px);
   margin: 0 auto;
+}
 
-  @media (max-width: 599px) {
-    max-width: max(calc(100% - 32px), 320px);
+@media (min-width: 768px) {
+  .container {
+    max-width: max(calc(100% - 64px), 768px);
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: max(calc(100% - 160px), 1120px);
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1680px) {
+  .container {
+    max-width: max(calc(100% - 200px), 1440px);
     margin: 0 auto;
   }
 }
