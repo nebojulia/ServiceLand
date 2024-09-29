@@ -4,7 +4,7 @@
   .header__inner {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
+    gap: 0 32px;
     width: 100%;
     align-items: center;
     padding: 20px 0;
@@ -27,7 +27,7 @@
   .header__item-link {
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     color: #0f172a;
     text-decoration: none;
   }
@@ -38,6 +38,18 @@
     .header__inner {
       grid-template-columns: repeat(12, 1fr);
     }
+
+    .header__activities {
+      /*не понимаю почему сносит на вторую строку грида*/
+      display: flex;
+      grid-column: 6/11;
+      justify-content: space-between;
+    }
+    .header__burger {
+      grid-column: 12;
+    }
+  }
+  @media (min-width: 1280px) {
     .header__nav {
       display: block;
       grid-column: 4/9;
@@ -46,6 +58,9 @@
       display: flex;
       grid-column: 9/13;
       justify-content: space-between;
+    }
+    .header__burger {
+      display: none;
     }
   }
 }
