@@ -36,20 +36,23 @@
   }
   @media (min-width: 992px) {
     .header__inner {
-      grid-template-columns: repeat(12, 1fr);
+      grid-template-columns: repeat(10, 1fr);
     }
 
     .header__activities {
-      /*не понимаю почему сносит на вторую строку грида*/
       display: flex;
-      grid-column: 6/11;
+      grid-column: 6/10;
       justify-content: space-between;
     }
     .header__burger {
-      grid-column: 12;
+      grid-column: 10;
+      /* align-self: end; */
     }
   }
   @media (min-width: 1280px) {
+    .header__inner {
+      grid-template-columns: repeat(12, 1fr);
+    }
     .header__nav {
       display: block;
       grid-column: 4/9;
