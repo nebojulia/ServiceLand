@@ -28,12 +28,29 @@
     margin: 0;
   }
 
+  .header__list-item:hover {
+    transform: translate(2px, 5%);
+    transition: 0.3s;
+  }
+
   .header__item-link {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     color: var(--slate-900);
     text-decoration: none;
+  }
+
+  .header__item-link:hover {
+    font-weight: 500;
+    color: var(--sky-700);
+    transition: 0.3s;
+  }
+
+  .header__item-link:active {
+    font-weight: 500;
+    color: var(--sky-500);
+    transition: 0.3s;
   }
 
   .header__activities {
