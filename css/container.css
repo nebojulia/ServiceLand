@@ -5,14 +5,14 @@
 
 @media (min-width: 768px) {
   .container {
-    max-width: max(calc(100% - 64px), 768px);
+    max-width: max(calc(100% - 64px), 576px);
     margin: 0 auto;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
-    max-width: max(calc(100% - 160px), 1120px);
+    max-width: max(calc(100% - 160px), 1240px);
     margin: 0 auto;
   }
 }
