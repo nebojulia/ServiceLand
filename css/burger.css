@@ -40,7 +40,7 @@
   }
 
   &:hover .burger__item {
-    background-color: transparent;
+    width: 0;
   }
 
   &:hover .burger__item::before {
@@ -50,6 +50,6 @@
 
   &:hover .burger__item::after {
     top: 0;
-    transform: rotate(135deg);
+    transform: rotate(-45deg);
   }
 }
