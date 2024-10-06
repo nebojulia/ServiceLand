@@ -3,10 +3,25 @@
   border-radius: 20px;
   padding: 10px 24px;
   height: 40px;
-  background: #0369a1;
+  background: var(--sky-700);
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.42857;
   color: var(--slate-100);
+  cursor: pointer;
+
+  &:hover {
+    background: var(--sky-800);
+    transition: 0.2s;
+  }
+  &:active {
+    background: var(--sky-500);
+    transition: 0.2s;
+    transform: scale(0.95, 0.95);
+  }
+  &:disabled {
+    background: var(--slate-200);
+    color: var(--slate-400);
+  }
 }
