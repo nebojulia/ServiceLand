@@ -39,17 +39,16 @@
     top: 6px;
   }
 
-  /*пока не работает хммм*/
-  .burger:hover .burger__item {
+  &:hover .burger__item {
     background-color: transparent;
   }
 
-  .burger:hover .burger__item::before {
+  &:hover .burger__item::before {
     top: 0;
     transform: rotate(45deg);
   }
 
-  .burger:hover .burger__item::after {
+  &:hover .burger__item::after {
     top: 0;
     transform: rotate(135deg);
   }
