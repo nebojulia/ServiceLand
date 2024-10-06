@@ -20,6 +20,7 @@
     background-color: #0369a1;
     transition: 0.5s;
   }
+
   .burger__item::before,
   .burger__item::after {
     content: "";
@@ -29,20 +30,25 @@
     background-color: #0369a1;
     transition: 0.5s;
   }
+
   .burger__item::before {
     top: -6px;
   }
+
   .burger__item::after {
     top: 6px;
   }
+
   /*пока не работает хммм*/
   .burger:hover .burger__item {
     background-color: transparent;
   }
+
   .burger:hover .burger__item::before {
     top: 0;
     transform: rotate(45deg);
   }
+
   .burger:hover .burger__item::after {
     top: 0;
     transform: rotate(135deg);
