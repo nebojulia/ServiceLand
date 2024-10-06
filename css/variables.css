@@ -1,10 +1,13 @@
 :root {
   --font-family: "Inter", sans-serif;
 
-  --bg-color: #fff;
-
-  --page-margin-mobile: 16px;
-  --page-margin-desktop: 80px;
+  --base-white: #fff;
+  --sky-500: #0ea5e9;
+  --sky-700: #0369a1;
+  --slate-100: #f1f5f9;
+  --slate-400: #94a3b8;
+  --slate-600: #475569;
+  --slate-900: #0f172a;
 
   /* --screen-m: 0;
   --screen-t: 576px;

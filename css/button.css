@@ -8,5 +8,5 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.42857;
-  color: #f1f5f9;
+  color: var(--slate-100);
 }
