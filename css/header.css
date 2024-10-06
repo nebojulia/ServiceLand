@@ -29,7 +29,7 @@
   }
 
   .header__list-item:hover {
-    transform: translate(2px, 5%);
+    transform: translate(1px, 5%);
     transition: 0.3s;
   }
 
@@ -39,18 +39,18 @@
     line-height: 1.5;
     color: var(--slate-900);
     text-decoration: none;
-  }
 
-  .header__item-link:hover {
-    font-weight: 500;
-    color: var(--sky-700);
-    transition: 0.3s;
-  }
+    &:hover {
+      font-weight: 500;
+      color: var(--sky-700);
+      transition: 0.3s;
+    }
 
-  .header__item-link:active {
-    font-weight: 500;
-    color: var(--sky-500);
-    transition: 0.3s;
+    &:active {
+      font-weight: 500;
+      color: var(--sky-500);
+      transition: 0.3s;
+    }
   }
 
   .header__activities {
