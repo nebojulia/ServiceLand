@@ -41,27 +41,3 @@
     color: var(--slate-600);
   }
 }
-
-[data-tooltip] {
-  position: relative;
-}
-[data-tooltip]::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  width: 120px;
-  left: 50px;
-  top: 20px;
-  font-size: 14px;
-  background: var(--slate-400);
-  color: var(--slate-200);
-  padding: 8px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  pointer-events: none;
-  transition: 0.5s;
-  opacity: 0;
-}
-[data-tooltip]:hover::after {
-  opacity: 0.9;
-  top: 42px;
-}

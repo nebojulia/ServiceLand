@@ -37,12 +37,12 @@
 
     &:hover {
       color: var(--sky-700);
-      transition: 0.3s;
+      transition: 0.1s;
     }
 
     &:active {
       color: var(--sky-500);
-      transition: 0.3s;
+      transition: 0.1s;
     }
   }
 
