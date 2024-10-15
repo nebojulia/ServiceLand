@@ -28,11 +28,6 @@
     margin: 0;
   }
 
-  .header__list-item:hover {
-    transform: translate(1px, 5%);
-    transition: 0.3s;
-  }
-
   .header__item-link {
     font-weight: 400;
     font-size: 16px;
@@ -41,13 +36,11 @@
     text-decoration: none;
 
     &:hover {
-      font-weight: 500;
       color: var(--sky-700);
       transition: 0.3s;
     }
 
     &:active {
-      font-weight: 500;
       color: var(--sky-500);
       transition: 0.3s;
     }

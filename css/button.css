@@ -18,7 +18,6 @@
   &:active {
     background: var(--sky-500);
     transition: 0.2s;
-    transform: scale(0.95, 0.95);
   }
   &:disabled {
     background: var(--slate-200);
