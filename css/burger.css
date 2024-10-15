@@ -39,16 +39,16 @@
     top: 6px;
   }
 
-  &:hover .burger__item {
+  .open-nav & .burger__item {
     width: 0;
   }
 
-  &:hover .burger__item::before {
+  .open-nav & .burger__item::before {
     top: 0;
     transform: rotate(45deg);
   }
 
-  &:hover .burger__item::after {
+  .open-nav & .burger__item::after {
     top: 0;
     transform: rotate(-45deg);
   }
