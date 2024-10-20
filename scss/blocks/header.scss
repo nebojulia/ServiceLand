@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 1px solid var(--slate-400);
+  border-bottom: 1px solid $slate-400;
 
   .header__inner {
     display: flex;
@@ -7,7 +7,7 @@
     align-items: center;
     padding: 20px 0;
 
-    @media (min-width: 1280px) {
+    @media (min-width: $screen-d) {
       & {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -23,13 +23,13 @@
   .header__burger {
     margin-left: auto;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-ti) {
       & {
         margin-left: 40px;
       }
     }
 
-    @media (min-width: 1280px) {
+    @media (min-width: $screen-d) {
       & {
         display: none;
       }
@@ -39,7 +39,7 @@
   .header__nav {
     display: none;
 
-    @media (min-width: 1280px) {
+    @media (min-width: $screen-d) {
       & {
         display: block;
         grid-column: 4/9;
@@ -60,16 +60,16 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--slate-900);
+    color: $slate-900;
     text-decoration: none;
 
     &:hover {
-      color: var(--sky-700);
+      color: $sky-700;
       transition: 0.1s;
     }
 
     &:active {
-      color: var(--sky-500);
+      color: $sky-500;
       transition: 0.1s;
     }
   }
@@ -77,14 +77,14 @@
   .header__activities {
     display: none;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-ti) {
       & {
         display: flex;
         margin-left: auto;
         justify-content: space-between;
       }
     }
-    @media (min-width: 1280px) {
+    @media (min-width: $screen-d) {
       & {
         display: flex;
         grid-column: 9/13;

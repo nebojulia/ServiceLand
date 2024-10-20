@@ -3,24 +3,26 @@
   border-radius: 20px;
   padding: 10px 20px;
   height: 40px;
-  background-color: var(--sky-700);
-  font-family: var(--font-family);
+  background-color: $sky-700;
+  font-family: $font-family;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.42857;
-  color: var(--slate-100);
+  color: $slate-100;
   cursor: pointer;
 
   &:hover {
-    background-color: var(--sky-800);
+    background-color: $sky-800;
     transition: 0.2s;
   }
+
   &:active {
-    background-color: var(--sky-500);
+    background-color: $sky-500;
     transition: 0.2s;
   }
+
   &:disabled {
-    background-color: var(--slate-200);
-    color: var(--slate-400);
+    background-color: $slate-200;
+    color: $slate-400;
   }
 }
