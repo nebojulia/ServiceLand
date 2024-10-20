@@ -11,11 +11,16 @@
   --slate-600: #475569;
   --slate-900: #0f172a;
 
-  /* --screen-m: 0;
+  /*
+  Подсказка по размерам экранов
+
+  --screen-m: 0;
   --screen-t: 576px;
   --screen-ti: 768px;
   --screen-tl: 992px;
   --screen-d: 1280px;
   --screen-dl: 1440px;
-  --screen-dxl: 1680px; */
+  --screen-dxl: 1680px;
+
+  */
 }
