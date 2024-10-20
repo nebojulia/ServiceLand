@@ -1,12 +1,12 @@
 .button {
   border: none;
   border-radius: 20px;
-  padding: 10px 24px;
+  padding: 10px 20px;
   height: 40px;
   background-color: var(--sky-700);
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.42857;
   color: var(--slate-100);
   cursor: pointer;
