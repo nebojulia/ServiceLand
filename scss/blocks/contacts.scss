@@ -1,0 +1,58 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  &__info {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__title {
+    margin: 0 0 12px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $slate-900;
+  }
+
+  &__phone,
+  &__adress {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: $slate-500;
+  }
+
+  &__numbers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__num {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.4286;
+    color: $slate-900;
+  }
+
+  &__email {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: $sky-600;
+    text-decoration: none;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.4286;
+    color: $slate-900;
+  }
+}
