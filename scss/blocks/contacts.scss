@@ -6,6 +6,11 @@
     display: flex;
     gap: 0 32px;
 
+    @media (min-width: $screen-ti) {
+      flex-direction: column;
+      gap: 12px 0;
+    }
+
     @media (min-width: $screen-d) {
       flex-direction: column;
       gap: 12px 0;

@@ -2,6 +2,14 @@
   border-top: 1px solid $slate-400;
 
   &__inner {
+    @media (min-width: $screen-tl) {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      // grid-template-rows: repeat(2, 1fr);
+      gap: 0 32px;
+    }
+  }
+  &__inner {
     @media (min-width: $screen-d) {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
@@ -22,6 +30,12 @@
   }
 
   &__content {
+    @media (min-width: $screen-ti) {
+      grid-column: 3 / 8;
+      display: flex;
+      margin-top: 56px;
+    }
+
     @media (min-width: $screen-d) {
       grid-column: 4 / 13;
       display: flex;
@@ -35,9 +49,15 @@
     gap: 16px 32px;
     margin-bottom: 32px;
 
+    @media (min-width: $screen-ti) {
+      flex-wrap: nowrap;
+      gap: 16px 16px;
+    }
+
     @media (min-width: $screen-d) {
       flex-wrap: nowrap;
       margin-bottom: 0;
+      gap: 16px 32px;
     }
   }
 
@@ -93,6 +113,11 @@
     line-height: 1.4286;
     color: $slate-500;
 
+    @media (min-width: $screen-tl) {
+      grid-column: 1 / 3;
+      margin: 0 0 56px 0;
+    }
+
     @media (min-width: $screen-d) {
       grid-column: 1 / 3;
       margin: 0 0 56px 0;
@@ -101,6 +126,10 @@
 }
 
 .footer .footer__contacts {
+  @media (min-width: $screen-ti) {
+    margin-left: 60px;
+  }
+
   @media (min-width: $screen-d) {
     margin-left: 143px;
   }
