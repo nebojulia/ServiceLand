@@ -4,7 +4,12 @@
 
   &__info {
     display: flex;
-    gap: 32px;
+    gap: 0 32px;
+
+    @media (min-width: $screen-d) {
+      flex-direction: column;
+      gap: 12px 0;
+    }
   }
 
   &__title {

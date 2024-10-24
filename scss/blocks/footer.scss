@@ -1,18 +1,43 @@
 .footer {
   border-top: 1px solid $slate-400;
 
+  &__inner {
+    @media (min-width: $screen-d) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      // grid-template-rows: repeat(2, 1fr);
+      gap: 0 32px;
+    }
+  }
+
   &__logo {
     margin: 24px 0;
+
+    @media (min-width: $screen-d) {
+      width: 180px;
+      height: 48px;
+      grid-column: 1 / 3;
+      margin: 40px 0;
+    }
   }
 
   &__content {
-    // display: grid;
-    // grid-template-columns: 148px 2fr;
-    // gap: 16px 32px;
+    @media (min-width: $screen-d) {
+      grid-column: 4 / 13;
+      display: flex;
+      margin-top: 56px;
+    }
+  }
+
+  &__info {
     display: flex;
     flex-wrap: wrap;
     gap: 16px 32px;
     margin-bottom: 32px;
+
+    @media (min-width: $screen-d) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__list {
@@ -20,6 +45,10 @@
     flex-direction: column;
     gap: 12px;
     min-width: 148px;
+
+    @media (min-width: $screen-d) {
+      min-width: 186px;
+    }
   }
 
   &__list-title {
@@ -50,11 +79,27 @@
     color: $slate-500;
   }
 
+  &__contacts {
+    @media (min-width: $screen-d) {
+      margin-left: 100px;
+    }
+  }
+
   &__rights {
     margin: 40px 0 24px 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.42857;
     color: $slate-500;
+
+    @media (min-width: $screen-d) {
+      grid-column: 1 / 3;
+    }
+  }
+}
+
+.footer .footer__contacts {
+  @media (min-width: $screen-d) {
+    margin-left: 143px;
   }
 }
