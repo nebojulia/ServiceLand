@@ -283,6 +283,13 @@ body {
   gap: 12px;
   min-width: 148px;
 }
+.footer__list-title {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0f172a;
+}
 .footer__list-items {
   display: flex;
   flex-direction: column;
@@ -295,13 +302,10 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4286;
-  color: #64748b;
 }
-.footer__list-title {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #0f172a;
+.footer__list-link {
+  text-decoration: none;
+  color: #64748b;
 }
 .footer__rights {
   margin: 40px 0 24px 0;
