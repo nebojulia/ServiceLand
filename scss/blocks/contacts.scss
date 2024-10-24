@@ -19,14 +19,15 @@
   &__adress {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    // gap: 4px;
+    width: 146px;
   }
 
   &__subtitle {
-    margin: 0;
+    margin: 0 0 4px 0;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.42857;
+    line-height: 1.4286;
     color: $slate-500;
   }
 
@@ -45,7 +46,7 @@
   &__email {
     font-weight: 600;
     font-size: 14px;
-    line-height: 1.42857;
+    line-height: 1.4286;
     color: $sky-600;
     text-decoration: none;
   }

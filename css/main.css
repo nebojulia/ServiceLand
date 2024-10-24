@@ -50,7 +50,12 @@ body {
   display: flex;
   width: 100%;
   align-items: center;
-  padding: 20px 0;
+  padding: 12px 0;
+}
+@media (min-width: 768px) {
+  .header .header__inner {
+    padding: 20px 0;
+  }
 }
 @media (min-width: 1280px) {
   .header .header__inner {
@@ -324,13 +329,13 @@ body {
 .contacts__phone, .contacts__adress {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  width: 146px;
 }
 .contacts__subtitle {
-  margin: 0;
+  margin: 0 0 4px 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.4286;
   color: #64748b;
 }
 .contacts__numbers {
@@ -346,7 +351,7 @@ body {
 .contacts__email {
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.4286;
   color: #0284c7;
   text-decoration: none;
 }
