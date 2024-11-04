@@ -1,25 +1,21 @@
 .footer {
+  padding: 24px 0;
   border-top: 1px solid $slate-400;
 
   &__inner {
     @media (min-width: $screen-tl) {
       display: grid;
       grid-template-columns: repeat(8, 1fr);
-      // grid-template-rows: repeat(2, 1fr);
       gap: 0 32px;
     }
-  }
-  &__inner {
+
     @media (min-width: $screen-d) {
-      display: grid;
       grid-template-columns: repeat(12, 1fr);
-      // grid-template-rows: repeat(2, 1fr);
-      gap: 0 32px;
     }
   }
 
   &__logo {
-    margin: 24px 0;
+    margin-bottom: 24px;
 
     @media (min-width: $screen-d) {
       width: 180px;
@@ -30,6 +26,9 @@
   }
 
   &__content {
+    display: grid;
+    gap: 32px;
+
     @media (min-width: $screen-ti) {
       grid-column: 3 / 8;
       display: flex;
@@ -38,25 +37,19 @@
 
     @media (min-width: $screen-d) {
       grid-column: 4 / 13;
-      display: flex;
-      margin-top: 56px;
     }
   }
 
   &__info {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 16px 32px;
-    margin-bottom: 32px;
 
     @media (min-width: $screen-ti) {
-      flex-wrap: nowrap;
       gap: 16px 16px;
     }
 
     @media (min-width: $screen-d) {
-      flex-wrap: nowrap;
-      margin-bottom: 0;
       gap: 16px 32px;
     }
   }
@@ -65,10 +58,9 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    min-width: 148px;
 
-    @media (min-width: $screen-d) {
-      min-width: 186px;
+    &:last-child {
+      grid-column: 1 / -1;
     }
   }
 
@@ -90,7 +82,6 @@
   }
 
   &__list-item {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.4286;
   }
@@ -100,15 +91,47 @@
     color: $slate-500;
   }
 
-  &__contacts {
-    @media (min-width: $screen-d) {
-      margin-left: 100px;
+  &__blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  &__list-block {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &__list-subtitle {
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4286;
+    color: $slate-500;
+  }
+
+  &__list-contact {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.4286;
+    color: $slate-900;
+
+    &[href^="mailto:"] {
+      font-weight: 600;
+      color: $sky-600;
     }
   }
 
+  &__list-address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.4286;
+    color: $slate-900;
+  }
+
   &__rights {
-    margin: 40px 0 24px 0;
-    font-weight: 400;
+    margin-top: 40px;
     font-size: 14px;
     line-height: 1.4286;
     color: $slate-500;
