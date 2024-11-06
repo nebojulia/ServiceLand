@@ -32,8 +32,8 @@
                 </svg>
               </div>
 
-              <nav class="nav">
-                <ul class="nav__list">
+              <nav class="nav header__nav">
+                <ul class="nav__list header__list">
                   <li class="nav__list-item">
                     <a class="nav__item-link" href="#">О компании</a>
                   </li>
@@ -79,7 +79,7 @@
         </header>
 
         <main class="page__main">
-          <div class="menu">
+          <div class="menu" id="menu">
             <div class="menu__header">
               <div class="logo nav__logo">
                 <svg viewBox="0 0 121 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +113,27 @@
                 </li>
               </ul>
             </nav>
-            <div class="menu__activities"></div>
+            <div class="menu__activities">
+              <a class="phone menu__phone" href="tel:88005551234">
+                <div class="phone__icon">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.5067 23.3333C13.5067 22.7811 13.9544 22.3333 14.5067 22.3333H17.4933C18.0456 22.3333 18.4933 22.7811 18.4933 23.3333C18.4933 23.8856 18.0456 24.3333 17.4933 24.3333H14.5067C13.9544 24.3333 13.5067 23.8856 13.5067 23.3333Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20 4.33334C22.0256 4.33334 23.6667 5.97439 23.6667 8.00001V24C23.6667 26.0256 22.0256 27.6667 20 27.6667H12C9.97438 27.6667 8.33334 26.0256 8.33334 24V8.00001C8.33334 5.97439 9.97438 4.33334 12 4.33334H20ZM10.3333 8.00001C10.3333 7.07896 11.079 6.33334 12 6.33334H12.3333V7.73334C12.3333 8.54827 12.9166 9.53334 14 9.53334H18C19.0835 9.53334 19.6667 8.54827 19.6667 7.73334V6.33334H20C20.9211 6.33334 21.6667 7.07896 21.6667 8.00001V24C21.6667 24.9211 20.9211 25.6667 20 25.6667H12C11.079 25.6667 10.3333 24.9211 10.3333 24V8.00001ZM14.3333 6.33334H17.6667V7.53334H14.3333V6.33334Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <span class="phone__num">8 800 555 1234</span>
+                <span class="phone__descr">Бесплатный звонок по РФ</span>
+              </a>
+              <button class="button menu__button" id="send-mail-button">Написать нам</button>
+            </div>
           </div>
         </main>
 
