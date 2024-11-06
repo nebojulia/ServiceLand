@@ -1,0 +1,21 @@
+.menu {
+  width: 280px;
+  height: 100vh;
+  display: none; //grid
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-left: 1px solid $slate-400;
+  z-index: 5;
+  background-color: $base-white;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.menu-open {
+  display: block;
+}
