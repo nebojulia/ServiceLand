@@ -6,7 +6,8 @@
     margin: 0;
   }
 
-  &__list_column {
+  &__list--column {
+    display: flex;
     flex-direction: column;
   }
 
