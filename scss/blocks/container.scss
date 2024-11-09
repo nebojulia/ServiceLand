@@ -1,25 +1,5 @@
 .container {
   width: calc(100% - 32px);
+  min-width: 1280px;
   margin: 0 auto;
-
-  @media (min-width: $screen-ti) {
-    & {
-      max-width: max(calc(100% - 64px), 576px);
-      margin: 0 auto;
-    }
-  }
-
-  @media (min-width: $screen-d) {
-    & {
-      max-width: max(calc(100% - 80px), 1220px);
-      margin: 0 auto;
-    }
-  }
-
-  @media (min-width: $screen-dl) {
-    & {
-      max-width: min(calc(100% - 160px), 1280px);
-      margin: 0 auto;
-    }
-  }
 }
