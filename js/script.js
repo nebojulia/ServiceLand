@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     burger.addEventListener("click", () => {
       document.body.classList.toggle("open-nav");
       menu.classList.toggle("menu-open");
+      document.querySelector(".page").classList.toggle("menu__blur");
     });
   }
 
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     close.addEventListener("click", () => {
       document.body.classList.toggle("open-nav");
       menu.classList.toggle("menu-open");
+      document.querySelector(".page").classList.toggle("menu__blur");
     });
   }
 });

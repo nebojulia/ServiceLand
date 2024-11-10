@@ -57,6 +57,11 @@
   &__button {
     width: 232px;
   }
+
+  &__blur {
+    filter: blur(8px);
+    background: rgba(15, 23, 42, 0.25);
+  }
 }
 
 .menu-open {
