@@ -1,0 +1,55 @@
+.close {
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+
+  .close__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 2px;
+    background-color: $sky-700;
+    transition: 0.5s;
+  }
+
+  .close__item::before,
+  .close__item::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: $sky-700;
+    transition: 0.5s;
+  }
+
+  .close__item::before {
+    top: -6px;
+  }
+
+  .close__item::after {
+    top: 6px;
+  }
+
+  .open-nav & .close__item {
+    width: 0;
+  }
+
+  .open-nav & .close__item::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .open-nav & .close__item::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+}
