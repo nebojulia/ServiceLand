@@ -1,19 +1,14 @@
 .menu {
+  display: flex;
   width: 280px;
-  height: 100vh;
-  display: none; //grid
+  height: 100svh;
   flex-direction: column;
-  position: absolute;
-  right: 0;
-  top: 0;
   border-left: 1px solid $slate-400;
-  z-index: 5;
   background-color: $base-white;
+  align-items: center;
 
   &__inner {
-    width: 240px;
-    margin: 0 16px 0 24px;
-    padding: 12px 0 32px 0;
+    padding: 12px 24px 32px 24px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -34,7 +29,6 @@
 
   &__nav {
     display: flex;
-    // height: 80%;
     justify-content: center;
     align-items: center;
     flex: 1 0 auto;
@@ -54,27 +48,10 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    // position: absolute;
-    // bottom: 32px;
     flex: 0 0 auto;
   }
 
-  &__button {
-    width: 232px;
-  }
-
-  &__blur {
-    filter: blur(8px);
-    background: rgba(15, 23, 42, 0.25);
-  }
-}
-
-.menu-open {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (min-width: $screen-d) {
-    display: none;
+  &__close {
+    transform: translateX(8px);
   }
 }
