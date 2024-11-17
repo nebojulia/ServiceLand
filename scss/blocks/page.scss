@@ -1,7 +1,7 @@
-// @use "../variables.scss"
+@use "../variables.scss";
 
 .page {
-  background-color: $base-white;
+  background-color: var(--base-white);
 
   &__inner {
     min-height: 100vh;
@@ -17,7 +17,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    z-index: variables.$z-index-nav;
+    z-index: var(--z-index-nav);
     transform: translateX(100%);
     transition: transform 0.25s ease;
 

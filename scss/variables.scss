@@ -1,16 +1,18 @@
-$font-family: "Inter", sans-serif;
+:root {
+  --font-family: "Inter", sans-serif;
 
-$base-white: #fff;
-$sky-500: #0ea5e9;
-$sky-600: #0284c7;
-$sky-700: #0369a1;
-$sky-800: #075985;
-$slate-100: #f1f5f9;
-$slate-200: #e2e8f0;
-$slate-400: #94a3b8;
-$slate-500: #64748b;
-$slate-600: #475569;
-$slate-900: #0f172a;
+  --base-white: #fff;
+  --sky-500: #0ea5e9;
+  --sky-600: #0284c7;
+  --sky-700: #0369a1;
+  --sky-800: #075985;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-900: #0f172a;
 
-$z-index-default: 1;
-$z-index-nav: 5;
+  --z-index-default: 1;
+  --z-index-nav: 5;
+}

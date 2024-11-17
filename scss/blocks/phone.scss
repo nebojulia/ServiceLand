@@ -1,3 +1,5 @@
+@use "../variables.scss";
+
 .phone {
   display: grid;
   grid-template-columns: 40px 1fr;
@@ -5,39 +7,40 @@
   height: 40px;
   text-decoration: none;
 
-  .phone__icon {
+  &__icon {
     border-radius: 20px;
     padding: 4px;
     width: 40px;
     height: 40px;
-    background-color: $sky-700;
+    background-color: var(--sky-700);
     grid-column: 1/2;
     grid-row: 1/3;
   }
 
-  &:hover .phone__icon {
-    background-color: $sky-800;
-    transition: 0.3s;
-  }
-  &:active .phone__icon {
-    background-color: $sky-500;
+  &:hover &__icon {
+    background-color: var(--sky-800);
     transition: 0.3s;
   }
 
-  .phone__num {
+  &:active &__icon {
+    background-color: var(--sky-500);
+    transition: 0.3s;
+  }
+
+  &__num {
     grid-column: 2;
     grid-row: 1;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
-    color: $slate-900;
+    color: var(--slate-900);
   }
 
-  .phone__descr {
+  &__descr {
     grid-column: 2;
     grid-row: 2;
     font-size: 12px;
     line-height: 1.3334;
-    color: $slate-600;
+    color: var(--slate-600);
   }
 }

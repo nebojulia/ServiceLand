@@ -1,8 +1,10 @@
+@use "../variables.scss";
+
 .footer {
   $block-name: &; //$block-name__element
 
   padding: 23px 0 24px;
-  border-top: 1px solid $slate-400;
+  border-top: 1px solid var(--slate-400);
 
   @media (min-width: $screen-tl) {
     padding: 39px 0 56px;
@@ -97,7 +99,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
-    color: $slate-900;
+    color: var(--slate-900);
   }
 
   &__list-items {
@@ -116,7 +118,7 @@
 
   &__list-link {
     text-decoration: none;
-    color: $slate-500;
+    color: var(--slate-500);
   }
 
   &__blocks {
@@ -141,18 +143,18 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.4286;
-    color: $slate-500;
+    color: var(--slate-500);
   }
 
   &__list-contact {
     text-decoration: none;
     font-size: 14px;
     line-height: 1.4286;
-    color: $slate-900;
+    color: var(--slate-900);
 
     &[href^="mailto:"] {
       font-weight: 600;
-      color: $sky-600;
+      color: var(--sky-600);
     }
   }
 
@@ -160,14 +162,14 @@
     font-style: normal;
     font-size: 14px;
     line-height: 1.4286;
-    color: $slate-900;
+    color: var(--slate-900);
   }
 
   &__rights {
     margin-top: 40px;
     font-size: 14px;
     line-height: 1.4286;
-    color: $slate-500;
+    color: var(--slate-500);
 
     @media (min-width: $screen-tl) {
       grid-column: 1 / 4;

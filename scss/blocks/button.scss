@@ -1,28 +1,30 @@
+@use "../variables.scss";
+
 .button {
   border: none;
   border-radius: 20px;
   padding: 10px 24px;
   height: 40px;
-  background-color: $sky-700;
-  font-family: $font-family;
+  background-color: var(--sky-700);
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.42857;
-  color: $slate-100;
+  color: var(--slate-100);
   cursor: pointer;
 
   &:hover {
-    background-color: $sky-800;
+    background-color: var(--sky-800);
     transition: 0.2s;
   }
 
   &:active {
-    background-color: $sky-500;
+    background-color: var(--sky-500);
     transition: 0.2s;
   }
 
   &:disabled {
-    background-color: $slate-200;
-    color: $slate-400;
+    background-color: var(--slate-200);
+    color: var(--slate-400);
   }
 }
