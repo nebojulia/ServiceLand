@@ -2,6 +2,37 @@
 
 .page {
   background-color: var(--base-white);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    z-index: var(--z-index-blur);
+    content: "";
+    display: block;
+    backdrop-filter: blur(8px);
+    background: rgba(15, 23, 42, 0.25);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+
+    .open-nav & {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    @media (min-width: $screen-d) {
+      & {
+        backdrop-filter: none;
+        background-color: transparent;
+
+        .open-nav & {
+          opacity: 0;
+          pointer-events: none;
+        }
+      }
+    }
+  }
 
   &__inner {
     min-height: 100vh;
@@ -23,6 +54,12 @@
 
     .open-nav & {
       transform: translateX(0);
+
+      @media (min-width: $screen-d) {
+        & {
+          transform: translateX(100%);
+        }
+      }
     }
   }
 
