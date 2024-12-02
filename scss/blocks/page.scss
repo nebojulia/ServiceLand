@@ -51,6 +51,9 @@
     z-index: var(--z-index-nav);
     transform: translateX(100%);
     transition: transform 0.25s ease;
+    background-color: var(--base-white);
+    max-height: 100svh;
+    overflow-y: auto;
 
     .open-nav & {
       transform: translateX(0);
