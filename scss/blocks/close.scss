@@ -20,7 +20,7 @@
     width: 24px;
     height: 2px;
     background-color: var(--sky-700);
-    transition: 0.5s;
+    font-size: 0;
   }
 
   .close__item::before,
@@ -30,7 +30,6 @@
     width: 24px;
     height: 2px;
     background-color: var(--sky-700);
-    transition: 0.5s;
   }
 
   .close__item::before {

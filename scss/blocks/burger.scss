@@ -20,7 +20,7 @@
     width: 24px;
     height: 2px;
     background-color: var(--sky-700);
-    transition: 0.5s;
+    font-size: 0;
   }
 
   .burger__item::before,
@@ -39,19 +39,5 @@
 
   .burger__item::after {
     top: 6px;
-  }
-
-  .open-nav & .burger__item {
-    width: 0;
-  }
-
-  .open-nav & .burger__item::before {
-    top: 0;
-    transform: rotate(45deg);
-  }
-
-  .open-nav & .burger__item::after {
-    top: 0;
-    transform: rotate(-45deg);
   }
 }
