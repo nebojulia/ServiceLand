@@ -1,33 +1,22 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
-  const burger = document.querySelector("#burger");
-  const close = document.querySelector("#close");
-  const menu = document.querySelector("#menu");
+  const navTriggers = document.querySelectorAll("[data-nav-trigger]");
 
-  if (burger) {
-    burger.addEventListener("click", () => {
-      document.body.classList.toggle("open-nav");
+  if (navTriggers) {
+    navTriggers.forEach((trigger) => {
+      trigger.addEventListener("click", () => {
+        document.body.classList.toggle("open-nav");
+      });
     });
   }
 
-  if (close) {
-    close.addEventListener("click", () => {
-      document.body.classList.toggle("open-nav");
-    });
-  }
-
-  if (document.body.classList === "open-nav") {
-    document.onclick = function (event) {
-      let target = event.target;
-
-      if (event.target.classList !== "page__menu") {
-        closeMenu();
-      }
-
-      function closeMenu() {
+  document.addEventListener("click", (e) => {
+    if (document.body.classList.contains("open-nav")) {
+      const target = e.target;
+      if (!target.closest(".page__menu") && !target.hasAttribute("data-nav-trigger")) {
         document.body.classList.toggle("open-nav");
       }
-    };
-  }
+    }
+  });
 });
